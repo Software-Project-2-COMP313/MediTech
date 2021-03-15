@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	  	<style>
+			html {
+			  scroll-behavior: smooth;
+			}
+		</style>
+	    <!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  	<link rel="icon" href="assets/images/favicon.png">
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="assets/css/mystyle.css">
+
+	    <title>MediTech</title>
+  </head>
+  <body>
+
+		<nav class="navbar navbar-fixed-top navbar-expand-lg">
+		  <a class="navbar-brand" href=""><img src="assets/images/icon1.png"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="blog">Blog</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">About</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Contact Us</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="book.html">Book Appointment</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="login">Sign In</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+
+		<div class="blog-content py-5">
+			<div class="container">
+				<div class="row">
+					<h1 class="blog-title text-center font-weight-bold">How to Stay Healthy? According to Doctors Who Live By These Rules</h1>
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCenter">
+					  Add Content
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLongTitle">Add Blog Content</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <form action="addBlog" method="post">
+						    <div class="modal-body">					        
+								<div class="form-group">
+								    <label for="title">Title:</label>
+								    <input type="text" class="form-control" id="title" name="title" placeholder="Input the title" required>
+								</div>
+
+								<div class="form-group">
+								    <label for="description">Description:</label>
+								    <textarea type="text" class="form-control" id="description" name="description" placeholder="Type the description" rows="13" style="overflow:auto;" required></textarea>
+								</div>
+						    </div>
+						    <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						        <button type="submit" class="btn btn-primary">Save</button>
+						    </div>
+					 	  </form>
+					    </div>
+					  </div>
+					</div>
+
+					<div class="blog-media my-5">
+						<div class="media">
+						  <img class="align-self-center mr-3 mediaimage" src="assets/images/headache.png" alt="Headache">
+						  <div class="media-body">
+						    <h5 class="mt-0 font-weight-bold">How to Head Off a Headache</h5>
+						    <p class="text-justify">Start double-fisting beverages the minute the throbbing begins. "I'll have a bottle of water in one hand and a coffee in the other," says Jennifer Ashton, M.D., chief medical correspondent for ABC News and author of The Self-Care Solution. That's because many headaches are caused by dehydration, while caffeine is known to curb them. If the drinks don't alleviate the pounding in an hour, try this simple health doctor advice: Pop some ibuprofen. (BTW, hereâs how to tell the difference between a headache and a migraine.)</p>
+						  </div>
+						</div>
+						<div class="media">
+						  <img class="align-self-center mr-3 mediaimage" src="assets/images/muscles.png" alt="Muscles">
+						  <div class="media-body">
+						    <h5 class="mt-0 font-weight-bold">Soothe Sore Muscles</h5>
+						    <p class="text-justify">Even TV-star docs don't get daily massages, so Travis Stork, M.D., board-certified emergency medicine doctor and co-host of The Doctors, does the next best thing: He uses a foam roller after his workouts to break up scar tissue and help his muscles recover. Some of the most neglected parts of the body are the glutes. (Related: This $6 Amazon Purchase Is the Single Best Recovery Tool I Own)</p>
+
+							<p class="mb-0 text-justify">"These are the big muscles that shape your buttocks and run posteriorly from the back of the hip bone to the top of the thigh bone, and they play a major role in helping you to maintain your posture," says Dr. Stork. To give your glutes some TLC post-workout, sit on a roller and tilt your body to the right until you feel a deep massage in your right glute/butt check; slowly move back and forth for a few minutes and then switch sides. The roller can also be effective for your IT band (the thick tissue that runs down the side of your leg from your hip to your knee) as well as all of the muscles in your lower extremities.</p>
+						  </div>
+						</div>
+						<div class="media">
+						  <img class="align-self-center mr-3 mediaimage" src="assets/images/burnout.png" alt="Burn Out">
+						  <div class="media-body">
+						    <h5 class="mt-0 font-weight-bold">Beat Burnout</h5>
+						    <p class="text-justify">Even TV-star docs don't get daily massages, so Travis Stork, M.D., board-certified emergency medicine doctor and co-host of The Doctors, does the next best thing: He uses a foam roller after his workouts to break up scar tissue and help his muscles recover. Some of the most neglected parts of the body are the glutes. (Related: This $6 Amazon Purchase Is the Single Best Recovery Tool I Own)</p>
+
+							<p class="mb-0 text-justify">"The rest of my week is pretty hectic, so having a Friday schedule with plenty of 'me' time really keeps me balanced," she says. "I see quite a few medical problems from too much work and not enough leisure, and I encourage my patients to strive for balance in their lives." Carve out a small portion of each dayâor set aside several hoursâto do something you enjoy. (Discover how to make time for self-care when it feels like you have none.)</p>
+						  </div>
+						</div>
+						<div class="media">
+						  <img class="align-self-center mr-3 mediaimage" src="assets/images/veggies.png" alt="Veggies">
+						  <div class="media-body my-5">
+						    <h5 class="mt-0 font-weight-bold">Eat Extra Veggies</h5>
+						    <p class="text-justify">Instead of having a garden-variety green salad, Margaret McKenzie, M.D., assistant professor of surgery at the Cleveland Clinic, tosses napa cabbage, radicchio, edamame, and carrots with ginger-soy dressing. "It gives me a lot of vitamins, antioxidants, and protein and makes me feel full," she says. (Related: 5 Genius Ways to Totally Overhaul Your Salad Game)</p>
+						  </div>
+						</div>
+						<div class="media">
+						  <img class="align-self-center mr-3 mediaimage" src="assets/images/cravings.png" alt="Cravings">
+						  <div class="media-body my-5">
+						    <h5 class="mt-0 font-weight-bold">Fight Cravings</h5>
+						    <p class="text-justify">Mehmet Oz, M.D., the director of integrative medicine at Columbia Surgery in New York City and the host of The Dr. Oz Show, eats raw walnuts (about one ounce) a few times a day for their hunger-quashing protein and heart-healthy fat.</p>
+
+							<p class="mb-0 text-justify">"The rap against nuts is that they're high in calories, but research is showing that our bodies may not actually absorb all the fat they contain," says Dr. Oz. "So we probably end up taking in fewer calories than what's listed on the package." (This health doctor advice is a solid reason to stock up on our 10 healthiest nuts and seeds!)</p>
+						  </div>
+						</div>
+						<div class="media">
+						  <img class="align-self-center mr-3 mediaimage" src="assets/images/cancer.png" alt="Cancer">
+						  <div class="media-body my-5">
+						    <h5 class="mt-0 font-weight-bold">Prevent Skin Cancer</h5>
+						    <p class="text-justify">In addition to getting annual skin checks from your dermatologist, recruit your hairstylist to scope out your scalp each time you visit, says Mona Gohara, M.D., an assistant clinical professor of dermatology at Yale University in New Haven, Connecticut.</p>
+
+							<p class="mb-0 text-justify">Scalp cancers often occur because people neglect to protect their heads, especially the part in their hair, with sunscreen or hats. This health doctor advice is vital because many scalp cancers go undetected because they're hard to spot. "Tell your hairdresser to look for any sores that are bleeding or crusting or don't seem to be healing," says Dr. Gohara. (Study up on what skin cancer really looks like.)</p>
+						  </div>
+						</div>
+						<div class="media">
+						  <img class="align-self-center mr-3 mediaimage" src="assets/images/mojo.png" alt="Mojo">
+						  <div class="media-body my-5">
+						    <h5 class="mt-0 font-weight-bold">Kick-Start Your Mojo</h5>
+						    <p class="text-justify">Mark Moyad, M.D., the director of preventive and alternative medicine at the University of Michigan Medical Center in Ann Arbor, regularly changes up his workout partners to keep from getting bored and stay motivated. Once a week he takes a spin class with his wife. Another day he meets up with buddies for a run. "If one of us slacks off, the other person can pressure him or her to step it up," says Dr. Moyad. (Related: Grab Your BFF for This Ultimate At-Home Partner Workout)</p>
+						  </div>
+						</div>
+						<div class="media">
+						  <img class="align-self-center mr-3 mediaimage" src="assets/images/sweet.png" alt="Sweet">
+						  <div class="media-body my-5">
+						    <h5 class="mt-0 font-weight-bold">Satisfy a Sweet Tooth</h5>
+						    <p class="text-justify">James Beckerman, M.D., a cardiologist at the Providence Heart and Vascular Institute in Portland, Oregon, and author of The Flex Diet, eats a handful of semisweet chocolate chips when he gets a sugar craving. Research from the European Heart Journal found that people who consumed the most chocolate reduced their risk for cardiovascular disease and strokes compared with non-chocoholics.</p>
+
+							<p class="mb-0 text-justify">"I'm a firm believer that if you like something, don't try to make a substitution that you won't enjoy as much," says Dr. Beckerman. "You can have a small portion as long as 90 percent of what you eat otherwise is healthy." (Get your fix with these 18 oh-so-good chocolate dessert recipes.)</p>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	     <footer class="border-top footer mt-3 w-100">
+	        <div class="footer-block sticky-stopper">
+	            <div class="container">
+	              <div class="row mt-5">
+	                    <div class="col-md-4">
+	                      <div class="logoimg text-center"><a href="index.html"><img src="assets/images/icon1.png"></a></div>
+	                      <p class="desc text-justify my-3">We believe in serving all people with responsibilities. 
+	                      We provide flexibility to the people so that they can get benefits according to their needs.</p>
+	                    </div>
+	                    <div class="footright col-md-4">
+	                      <div class="footlist mx-5">
+	                        <p class="listtitle font-weight-bold">Useful Links</p><ul>
+	                         <li class="foot-item"><a class="foot-link" href="">Home</a></li>
+	                      	<li class="foot-item"><a class="foot-link" href="blog">Blog</a></li>
+	                      	<li class="foot-item"><a class="foot-link" href="#">About</a></li>
+	                       	<li class="foot-item"><a class="foot-link" href="#">Contact Us</a></li>
+	                      	<li class="foot-item"><a class="foot-link" href="book.html">Book An Appointment</a></li>
+	                        </ul>
+	                       
+	                    	</div>
+	                  	</div> 
+	                  <div class="col-md-4">
+	                  	<p class="lasttitle font-weight-bold">Contact</p>
+	                  	<p>Our Clinic</p>
+	                  	<p>E-mail: meditech.ca@outlook.com</p>
+	                  </div>                
+	                <div class=" mt-4 text-left font-weight-bold"><p>&copy; MediTech 2021, All Right Reserved</p> </div>
+	              </div>
+	            </div>
+	        </div>
+	    </footer>
+	    <!-- Optional JavaScript -->
+	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	    <script src="assets/js/main.js"></script>
+  </body>
+</html>
