@@ -1,0 +1,109 @@
+
+public By textbox_search = By.byid("input");
+
+
+/********* Index Page Ids *******/
+
+----Modules - Ids ----
+
+1) Navbar - navigation
+
+2) Carousel - carouselControls
+
+3) About Us - aboutus
+
+4) Blog - blog
+
+5) Book Appointment - bookappointment
+
+/********** Sign In Page *******/
+
+1) Designation - designation
+public By dropbox_designation = By.byid("designation");
+
+2) Title - title
+
+3) First Name - firstName
+public By textbox_firstName = By.byid("firstName");
+
+4) Middle Name - middleName
+public By textbox_middleName = By.byid("middleName");
+
+5) Last Name - lastName
+public By textbox_lastName = By.byid("lastName");
+
+6) Date of Birth - birthDate
+public By textbox_birthDate = By.byid("birthDate");
+
+7) Gender - name=gender
+			id for Male - male
+			id for Female - female
+
+public By radiobutton_male = By.byid("male");
+public By radiobutton_female = By.byid("female");
+
+
+8) Email - email
+public By textbox_email = By.byid("email");
+
+9) Phone - phone
+public By textbox_phone = By.byid("phone");
+
+10) Age - age
+public By textbox_age = By.byid("age");
+
+11) Clinic Address - clinicAddress
+public By textbox_clinicAddress = By.byid("clinicAddress");
+
+12) Practicing Since - practicingSince
+public By textbox_practicingSince = By.byid("practicingSince");
+
+13) Specifications - specifications
+public By textbox_specifications = By.byid("specifications");
+
+14) Certifications - certifications
+public By textbox_certifications = By.byid("certifications");
+
+15) Languages - languages
+public By textbox_languages = By.byid("languages");
+
+16) Education - education
+public By textbox_education = By.byid("education");
+
+17) Rewards - rewards
+public By textbox_rewards = By.byid("rewards");
+
+18) Home Address - homeAddress
+public By textbox_homeAddress = By.byid("homeAddress");
+
+19) Sickness - sickness
+public By textbox_sickness = By.byid("sickness");
+
+20) Allergies - allergies
+public By textbox_allergies = By.byid("allergies");
+
+21) Special Requests - specialReqs
+public By textbox_specialReqs = By.byid("specialReqs");
+
+22)Prescriptions - prescriptions
+public By textbox_prescriptions = By.byid("prescriptions");
+
+/********* Login Page ********/
+
+1) Username - email
+public By textbox_email = By.byid("email");
+
+2) Password - password
+public By textbox_password = By.byid("password");
+
+
+/******** Blog Page *********/
+
+1) Title - mediatitle
+public By textbox_mediatitle = By.byid("mediatitle");
+
+2) Image - mediaimg
+public By textbox_mediaimg = By.byid("mediaimg");
+
+3) Description - mediadesc
+public By textbox_mediadesc = By.byid("mediadesc");

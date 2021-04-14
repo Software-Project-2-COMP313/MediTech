@@ -1,0 +1,174 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+      <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="icon" href="assets/images/favicon.png">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/mystyle.css">
+
+      <title>MediTech</title>
+  </head>
+  <body>
+
+    <nav id="navigation" class="navbar navbar-fixed-top navbar-expand-lg">
+      <a class="navbar-brand" href="index.ejs"><img src="assets/images/icon1.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.ejs">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="doctors.ejs">Doctors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.ejs">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutus">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="prescreening.ejs">Pre-Screening</a>
+          </li>
+
+
+        <div class="dropdown show">
+          <a class="btn nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Sign In
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item nav-link" href="login.ejs">Login</a>
+            <a class="dropdown-item nav-link" href="signin.ejs">Sign Up</a>
+          </div>
+        </div>
+        </ul>
+      </div>
+    </nav>
+
+  <div class="container">
+    <div class="Profile">
+          <div class="card bg-secondary shadow">
+            <div class="card-header bg-white border-0">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h3 class="mb-0">My account</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <form>
+                <h6 class="heading-small text-muted mb-4">User information</h6>
+                <div class="pl-lg-4">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="FirstName">First Name</label>
+                        <input type="text" id="FirstName" class="form-control form-control-alternative" placeholder="" value="">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-last-name">Last name</label>
+                        <input type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="" value="Jesse">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="Designation">Designation</label>
+                        <input type="text" id="Designation" class="form-control form-control-alternative" placeholder="" value="">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-email">Email address</label>
+                        <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-4">
+                <!-- Address -->
+                <h6 class="heading-small text-muted mb-4">Contact information</h6>
+                <div class="pl-lg-4">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-address">Address</label>
+                        <input id="input-address" class="form-control form-control-alternative" placeholder="" value="" type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="Phone">Phone</label>
+                        <input type="text" id="Phone" class="form-control form-control-alternative" placeholder="" value="">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="Age">Age</label>
+                        <input type="text" id="Age" class="form-control form-control-alternative" placeholder="" value="">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label class="form-control-label" for="Gender">Gender</label>
+                        <input type="number" id="Gender" class="form-control form-control-alternative" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-4">
+                <!-- Description -->
+                <h6 class="heading-small text-muted mb-4">About me</h6>
+                <div class="pl-lg-4">
+                  <div class="form-group focused">
+                    <label>Sickness</label>
+                    <textarea rows="4" class="form-control form-control-alternative" placeholder=""></textarea>
+                    <label>Allergies</label>
+                    <textarea rows="4" class="form-control form-control-alternative" placeholder=""></textarea>
+                    <label>Special Requests</label>
+                    <textarea rows="4" class="form-control form-control-alternative" placeholder=""></textarea>
+                    <label>Prescriptions</label>
+                    <textarea rows="4" class="form-control form-control-alternative" placeholder=""></textarea>
+                  </div>
+                </div>
+                <div class="buttonactions my-4 d-flex text-center justify-content-center">
+                  <button type="button" class="btn btn-success mr-3">Edit</button>
+                   <button type="button" class="btn btn-success">Save Changes</button>
+               </div>
+              </form>
+            </div>
+          </div>
+    </div>
+  </div>
+
+   <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+  </body>
+</html>

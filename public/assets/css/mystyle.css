@@ -30,6 +30,16 @@ a:hover{
       text-decoration: none !important;
 }
 
+.white{
+  color: #ffffff;
+}
+
+.text-red{
+  color: red;
+}
+.text-green{
+  color: green;
+}
 /***** Header *****/
 nav.navbar.navbar-fixed-top {
     margin-bottom: 0;
@@ -87,6 +97,31 @@ nav li a:hover {
   right: 5%;
 }
 
+a.btn.nav-link{
+    padding: 15px 5px 0px;
+    font-size: 18px;
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -ms-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+    color: #172a88;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .dropdown-item:focus, .dropdown-item:hover {
+    background-color: #f8e2f4 !important;
+}
+
+.dropdown-item.nav-link{
+    transition: all 1s ease 0s;
+    color: #172a88;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
 /**** Carousel *****/
 
 .carousel-inner img {
@@ -260,6 +295,10 @@ footer{
   position: relative;
   overflow: hidden;
 }
+.footer-block .col-md-4{
+  color: #172a88;
+  font-weight: 700;
+}
 .footer-block{
   background-image: url("../images/bg.png");
   background-color: #ffffff;
@@ -268,12 +307,13 @@ footer{
 	display: block;
 }
 .foot-item a{;
-	color: #000000;
+	color: #172a88;
 		-webkit-transition: all 1s ease 0s;
     -moz-transition: all 1s ease 0s;
     -ms-transition: all 1s ease 0s;
     -o-transition: all 1s ease 0s;
     transition: all 1s ease 0s;
+    font-weight: 700;
 }
 .foot-item a:hover{
 			    -webkit-transition: all 1s ease 0s;
@@ -490,4 +530,188 @@ footer{
 }
 .mediaimage{
   border-radius: 15px;
+}
+
+/********** Pre Screening *******/
+.prescreen-body{
+   background-image: url("../images/covidbg.png");
+   background-color: #ffffff;
+}
+.mainscreen{
+  padding-top: 60px;
+}
+
+input[type=checkbox], input[type=radio] {
+    margin-right: 5px !important;
+}
+
+.legpad{
+  padding: 0 10px;
+}
+
+legend, .ques{
+  font-weight: bold !important;
+  font-size: 18px !important;
+}
+.ques pre, pre {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" !important;
+    font-size: 15px;
+}
+
+.prescreen img {
+  height: 100vh !important;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+/*********** Doctors Page **************/
+
+.finddoctorbox{
+  padding-top: 70px;
+  width: 100%;
+}
+
+.subheaderimage {
+    background: url(../images/doctor.jpg);
+    min-height: 180px;
+    padding: 50px 0 0;
+    position: relative;
+    text-align: center;
+    background-position: right bottom;
+}
+.careplus-subheader-image span {
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.careplus-dark-transparent {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-color: #08364b;
+}
+.doctorpage .card-img-top {
+    height: 116px;
+    width: 117px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.doctorpage .card-deck .card{
+  padding: 6px;
+  border-color: #172a88;
+}
+
+/******** Physician Page ******/
+
+.doctorlist .media img {
+    height: 280px;
+    width: 234px;
+    border-radius: 15px;
+    background: #ffffff;
+}
+
+.font-16{
+  font-size: 16px;
+  line-height: 25px;
+}
+.doctorlist .media {
+    background: rgb(2 197 255 / 17%);
+    border-radius: 15px;
+  }
+
+  .doctorlist .media .media-body{
+        padding: 10px 0;
+  }
+  .doctorlist .media:after{
+    display: none;
+  }
+
+  button.srtbtn {
+    transition: all 1s ease 0s;
+    color: #172a88;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    background: none !important;
+    outline: none;
+    border: none !important;
+    margin: 0 !important;
+    width: 100%;
+    text-align: left;
+}
+button.srtbtn:hover{
+  background-color: #f8e2f4 !important;
+  color: #172a88 !important;
+} 
+
+.bootstrap-datetimepicker-widget table td.active, 
+.bootstrap-datetimepicker-widget table td.active:hover {
+    background-color: #ff0066;
+  }
+  .bootstrap-datetimepicker-widget table{
+    font-size: 14px!important;
+  }
+
+  .datepicker.col-md-6{
+    -ms-flex: 0 0 58.333333% !important;
+    flex: 0 0 58.333333% !important;
+    max-width: 58.333333% !important;
+  }
+  .timepicker.col-md-6{
+    -ms-flex: 0 0 41.666667% !important;
+    flex: 0 0 41.666667% !important;
+    max-width: 41.666667% !important;
+  }
+
+  /*********** Profile Page **********/
+
+  .Profile{
+    padding-top: 85px;
+  }
+
+  .Profile .card:hover{
+    transform: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+  .bg-secondary {
+    background-color: #f7fafc !important;
+}
+.shadow, .card-profile-image img {
+    box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%) !important;
+}
+[class*='shadow'] {
+    transition: all .15s ease;
+}
+.form-control-alternative {
+    transition: box-shadow .15s ease;
+    border: 0;
+    box-shadow: 0 1px 3px rgb(50 50 93 / 15%), 0 1px 0 rgb(0 0 0 / 2%);
+}
+.focused .form-control {
+    border-color: rgba(50, 151, 211, .25);
+}
+.focused .form-control {
+    border-color: rgba(50, 151, 211, .25);
+}
+
+/**********Appointment Page ***********/
+
+.appointmentpage{
+  padding-top: 85px;
+}
+.appointmentpage .card:hover{
+      transform: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
 }

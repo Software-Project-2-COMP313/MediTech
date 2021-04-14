@@ -1,15 +1,23 @@
-<!doctype html>
+  <!doctype html>
 <html lang="en">
   <head>
+      <style>
+        html {
+          scroll-behavior: smooth;
+        }
+    </style>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  	<link rel="icon" href="assets/images/favicon.png">
+  <link rel="icon" href="assets/images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
@@ -19,50 +27,64 @@
     <title>MediTech</title>
   </head>
   <body class="signin-body">
-	<nav id="navigation" class="navbar navbar-fixed-top navbar-expand-lg">
-  	<a class="navbar-brand" href="/"><img src="assets/images/icon1.png"></a>
-  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    	<span class="navbar-toggler-icon"></span>
-  	</button>
-	  	<div class="collapse navbar-collapse" id="navbarNav">
-	    	<ul class="navbar-nav">
-	      		<li class="nav-item active">
-		        	<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-		      	</li>
-		      	<li class="nav-item">
-		        	<a class="nav-link" href="blog">Blog</a>
-		      	</li>
-		      	<li class="nav-item">
-		        	<a class="nav-link" href="#">About</a>
-		      	</li>
-		      	<li class="nav-item">
-		        	<a class="nav-link" href="#">Contact Us</a>
-		      	</li>
-		      	<li class="nav-item">
-		        	<a class="nav-link" href="#bookappointment">Book Appointment</a>
-		      	</li>
-		      	<li class="nav-item">
-		        	<a class="nav-link" href="login">Sign In</a>
-		      	</li>
-	    	</ul>
-  		</div>
-	</nav>
 
 
-  	<div class="signincontent">
-    	<div class="container">
-      		<div class="row">
-        		<div class="col-md-8 my-5 contents">
-          			<div class="row justify-content-center">
-            			<div class="col-md-8">
-              				<div class="my-4">
-				              <h3 class="py-3">Sign In to <strong>Book Appointment</strong></h3>
-				            </div>
-            <form action="signup" method="post">
+<nav id="navigation" class="navbar navbar-fixed-top navbar-expand-lg">
+  <a class="navbar-brand" href="index.ejs"><img src="assets/images/icon1.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.ejs">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="doctors.ejs">Doctors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.ejs">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.ejs#aboutus">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="prescreening.ejs">Pre-Screening</a>
+      </li>
+        <div class="dropdown show">
+          <a class="btn nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Sign In
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item nav-link" href="login.ejs">Login</a>
+            <a class="dropdown-item nav-link" href="signin.ejs">Sign Up</a>
+          </div>
+        </div>
+    </ul>
+  </div>
+</nav>
+
+
+  <div class="signincontent">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 my-5 contents">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="my-4">
+              <h3 class="py-3">Sign In to <strong>Book Appointment</strong></h3>
+
+            </div>
+            <form action="#" method="post">
+
               <div class="form-group row">
                   <label for="designation" class="col-md-4 col-form-label">Sign In As: </label>
                   <div class="col-md-8">
-                      <select class="form-control" id="designation" name="designation" required>
+                      <select class="form-control" id="designation" required>
                         <option value="">Select</option>
                         <option value="Physician">Physician</option>
                         <option value="Patient">Patient</option>
@@ -86,6 +108,13 @@
                   <label for="firstName" class="col-md-4 col-form-label">First Name: </label>
                   <div class="col-md-8">
                     <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="middleName" class="col-md-4 col-form-label">Middle Name: </label>
+                  <div class="col-md-8">
+                    <input type="text" class="form-control" id="middleName" name="middleName" placeholder="Middle Name">
                   </div>
                 </div>
 
@@ -122,13 +151,6 @@
                   <label for="email" class="col-md-4 col-form-label">Email:</label>
                   <div class="col-md-8">
                     <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-                  </div>
-                </div>
-
-                <div class="form-group row">
-                  <label for="password" class="col-md-4 col-form-label">Password:</label>
-                  <div class="col-md-8">
-                    <input type="password" class="form-control" id="password" name="password" placeholder="password" required>
                   </div>
                 </div>
 
@@ -170,6 +192,13 @@
                   </div>
 
                   <div class="form-group row">
+                    <label for="certifications" class="col-md-4 col-form-label">Certification(s):</label>
+                    <div class="col-md-8">
+                      <input type="file" class="filebox" id="certifications" name="certifications" placeholder="" multiple required>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
                     <label for="languages" class="col-md-4 col-form-label">Language(s):</label>
                     <div class="col-md-8">
                       <input type="text" class="form-control" id="languages" name="languages" placeholder="" required>
@@ -184,9 +213,9 @@
                   </div>
 
                   <div class="form-group row">
-                    <label for="rewards" class="col-md-4 col-form-label">Award(s):</label>
+                    <label for="rewards" class="col-md-4 col-form-label">Reward(s):</label>
                     <div class="col-md-8">
-                      <textarea class="form-control" id="awards" name="awards" placeholder="Awards..." rows="4" required></textarea> 
+                      <textarea class="form-control" id="rewards" name="rewards" placeholder="Rewards..." rows="4" required></textarea> 
                     </div>
                   </div>
 
@@ -230,7 +259,8 @@
                   </div>
                 </div>
 
-              <input id="signup" type="submit" value="Sign Up" class="btn text-white btn-block btn-primary">
+
+              <input id="SignIn" type="submit" value="Sign In" class="btn text-white btn-block btn-primary">
 
               <div class="signclass my-4">
                 <div class="signlink text-right d-inline font-weight-bold"><a href="login.ejs">Login</a></div>
@@ -256,8 +286,8 @@
         
 
           <div class="col-md-4 signright order-md-2">
-            <img src="assets/images/beat.gif" alt="Image" class="img-fluid">
-            <img src="assets/images/pin.png" alt="Image" class="img-fluid">
+              <img src="assets/images/beat.gif" alt="Image" class="img-fluid">
+              <img src="assets/images/pin.png" alt="Image" class="img-fluid">
           </div>
 
       </div>
@@ -275,18 +305,19 @@
 	                    </div>
 	                    <div class="footright col-md-4">
 	                      <div class="footlist mx-5">
-	                        <p class="listtitle font-weight-bold">Useful Links</p>
+	                        <p class="listtitle font-weight-bolder">Useful Links</p>
 	                        <li class="foot-item"><a class="foot-link" href="index.ejs">Home</a></li>
+                          <li class="foot-item"><a class="foot-link" href="doctors.ejs">Doctors</a></li>
 	                      	<li class="foot-item"><a class="foot-link" href="blog.ejs">Blog</a></li>
-	                      	<li class="foot-item"><a class="foot-link" href="#">About</a></li>
+	                      	<li class="foot-item"><a class="foot-link" href="index.ejs#aboutus">About</a></li>
 	                       	<li class="foot-item"><a class="foot-link" href="#">Contact Us</a></li>
-	                      	<li class="foot-item"><a class="foot-link" href="book.ejs">Book An Appointment</a></li>
+                          <li class="foot-item"><a class="foot-link" href="prescreening.ejs">Pre-Screening</a></li>
 	                    	</div>
 	                  	</div> 
 	                  <div class="col-md-4">
-	                  	<p class="lasttitle font-weight-bold">Contact</p>
+	                  	<p class="lasttitle font-weight-bolder">Contact</p>
 	                  	<p>Our Clinic</p>
-	                  	<p>E-mail: meditech.ca@outlook.com</p>
+	                  	<p>E-mail: <a href="#">meditech.ca@outlook.com</a></p>
 	                  </div>                
 	                <div class=" mt-4 text-left font-weight-bold"><p>&copy; MediTech 2021, All Right Reserved</p> </div>
 	              </div>

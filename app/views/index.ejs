@@ -22,17 +22,20 @@
   <body>
 
 		<nav id="navigation" class="navbar navbar-fixed-top navbar-expand-lg">
-		  <a class="navbar-brand" href="/"><img src="assets/images/icon1.png"></a>
+		  <a class="navbar-brand" href="index.ejs"><img src="assets/images/icon1.png"></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNav">
 		    <ul class="navbar-nav">
 		      <li class="nav-item active">
-		        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+		        <a class="nav-link" href="index.ejs">Home <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#blog">Blog</a>
+		        <a class="nav-link" href="doctors.ejs">Doctors</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="blog.ejs">Blog</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#aboutus">About</a>
@@ -41,11 +44,31 @@
 		        <a class="nav-link" href="#">Contact Us</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#bookappointment">Book Appointment</a>
+		        <a class="nav-link" href="prescreening.ejs">Pre-Screening</a>
 		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="login">Sign In</a>
-		      </li>
+
+				<div class="dropdown show">
+				  <a class="btn nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    Sign In
+				  </a>
+
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+				    <a class="dropdown-item nav-link" href="login.ejs">Login</a>
+				    <a class="dropdown-item nav-link" href="signin.ejs">Sign Up</a>
+				  </div>
+				</div>
+
+				<div class="dropdown show">
+				  <a class="btn nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    My Account
+				  </a>
+
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+				    <a class="dropdown-item nav-link" href="profile.ejs">My Profile</a>
+				    <a class="dropdown-item nav-link" href="appointment.ejs">My Appointments</a>
+				  </div>
+				</div>
+
 		    </ul>
 		  </div>
 		</nav>
@@ -97,12 +120,12 @@
 										    <img class="card-img-top" src="assets/images/stress.png" alt="Manage Stress"><span class="tooltiptext">Manage Stress</span>
 										    <div class="card-body text-primary">
 										      <h5 class="card-title text-center">Manage Stress</h5>
-										      <p class="card-text text-justify collapse" id="cardcollapse1" aria-expanded="false">"I make it a point to meditate pretty much daily," says Sanjay Gupta, M.D., CNN chief medical correspondent and a neurosurgeon in Atlanta.Try this advice in a quiet roomâwithout music and with natural lightâfor a few minutes each day. "I silently focus on a word in my mind. The one I usually use is gentle, but you can pick any word that doesn't evoke a strong emotion," says Dr. Gupta.Resting your mind regularly equips you to better handle stressful moments when they pop up, he says. (If you need more convincing, check out 17 powerful benefits of meditation.)</p><a role="button" class="collapsed" data-toggle="collapse" href="#cardcollapse1" aria-expanded="false" aria-controls="cardcollapse1"></a>
+										      <p class="card-text text-justify collapse" id="cardcollapse1" aria-expanded="false">"I make it a point to meditate pretty much daily," says Sanjay Gupta, M.D., CNN chief medical correspondent and a neurosurgeon in Atlanta.Try this advice in a quiet room—without music and with natural light—for a few minutes each day. "I silently focus on a word in my mind. The one I usually use is gentle, but you can pick any word that doesn't evoke a strong emotion," says Dr. Gupta.Resting your mind regularly equips you to better handle stressful moments when they pop up, he says. (If you need more convincing, check out 17 powerful benefits of meditation.)</p><a role="button" class="collapsed" data-toggle="collapse" href="#cardcollapse1" aria-expanded="false" aria-controls="cardcollapse1"></a>
 										    </div>
 										  </div>
 										  <div class="card p-3 border-pink">
 										    <blockquote class="blockquote mb-0 card-body text-pink">
-										      <p class="card-text text-justify">Discover what the nation's top docs do IRL to supercharge their healthâeven during cold and flu season. Then, take what you learn and apply to it your life today.</p>
+										      <p class="card-text text-justify">Discover what the nation's top docs do IRL to supercharge their health—even during cold and flu season. Then, take what you learn and apply to it your life today.</p>
 										      <footer class="blockquote-footer">
 										        <small class="text-muted">
 										          By Ted Spiker <cite title="Source Title">Stay Healthy</cite>
@@ -119,7 +142,7 @@
 										  </div>
 										  <div class="card text-center p-3 border-info">
 										    <blockquote class="blockquote mb-0">
-										      <p class="card-text text-justify text-info">âTrue health care reform cannot happen in Washington. It has to happen in our kitchens, in our homes, in our communities. All health care is personal.â</p>
+										      <p class="card-text text-justify text-info">“True health care reform cannot happen in Washington. It has to happen in our kitchens, in our homes, in our communities. All health care is personal.”</p>
 										      <footer class="blockquote-footer">
 										        <small>
 										          By Mehmet Oz<cite title="Source Title">Journalism Career</cite>
@@ -139,7 +162,7 @@
 										  </div>
 										  <div class="card p-3 text-right border-danger">
 										    <blockquote class="blockquote mb-0">
-										      <p class="card-text text-justify text-danger"> âLife affords no greater responsibility, no greater privilege, than the raising of the next generation.â</p>
+										      <p class="card-text text-justify text-danger"> “Life affords no greater responsibility, no greater privilege, than the raising of the next generation.”</p>
 										    </blockquote>
 										  </div>
 										  <div class="card border-primary">
@@ -162,7 +185,7 @@
 					      	<div class="container">
 						        <div class="row">
 						        	<div class="rbarea text-center banner-wrapper sticky" data-aos="fade-left" data-aos-easing="ease" data-aos-delay="500">
-						        		<a href="#"><img src="assets/images/rightbody.png" class="text-center"></a>
+						        		<a href="doctors.ejs"><img src="assets/images/rightbody.png" class="text-center"></a>
 						        	</div>
 						        </div>
 					    	</div> 
@@ -177,25 +200,25 @@
 	            <div class="container">
 	              <div class="row mt-5">
 	                    <div class="col-md-4">
-	                      <div class="logoimg text-center"><a href=""><img src="assets/images/icon1.png"></a></div>
+	                      <div class="logoimg text-center"><a href="index.ejs"><img src="assets/images/icon1.png"></a></div>
 	                      <p class="desc text-justify my-3">We believe in serving all people with responsibilities. 
 	                      We provide flexibility to the people so that they can get benefits according to their needs.</p>
 	                    </div>
 	                    <div class="footright col-md-4">
 	                      <div class="footlist mx-5">
-	                        <p class="listtitle font-weight-bold">Useful Links</p><ul>
-	                        <li class="foot-item"><a class="foot-link" href="index.html">Home</a></li>
-	                      	<li class="foot-item"><a class="foot-link" href="blog.html">Blog</a></li>
-	                      	<li class="foot-item"><a class="foot-link" href="#">About</a></li>
+	                        <p class="listtitle font-weight-bolder">Useful Links</p>
+	                        <li class="foot-item"><a class="foot-link" href="index.ejs">Home</a></li>
+	                        <li class="foot-item"><a class="foot-link" href="doctors.ejs">Doctors</a></li>
+	                      	<li class="foot-item"><a class="foot-link" href="blog.ejs">Blog</a></li>
+	                      	<li class="foot-item"><a class="foot-link" href="index.ejs#aboutus">About</a></li>
 	                       	<li class="foot-item"><a class="foot-link" href="#">Contact Us</a></li>
-	                      	<li class="foot-item"><a class="foot-link" href="book.html">Book An Appointment</a></li></ul>
+	                       	<li class="foot-item"><a class="foot-link" href="prescreening.ejs">Pre-Screening</a></li>
 	                    	</div>
-	                     
 	                  	</div> 
 	                  <div class="col-md-4">
-	                  	<p class="lasttitle font-weight-bold">Contact</p>
+	                  	<p class="lasttitle font-weight-bolder">Contact</p>
 	                  	<p>Our Clinic</p>
-	                  	<p>E-mail: meditech.ca@outlook.com</p>
+	                  	<p>E-mail: <a href="#">meditech.ca@outlook.com</a></p>
 	                  </div>                
 	                <div class=" mt-4 text-left font-weight-bold"><p>&copy; MediTech 2021, All Right Reserved</p> </div>
 	              </div>
@@ -227,6 +250,18 @@
 					scrollTop: $(window).height()
 				}, 1200);
 			});
+		</script>
+		<script>
+			function check() {
+				var signed = $('#logged').val();
+
+				if (signed === 'true') {
+				    //What you want to do
+				}
+				else {
+				   
+				}
+			} 
 		</script>
   </body>
 </html>
