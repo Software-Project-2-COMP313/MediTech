@@ -47,6 +47,9 @@ module.exports = function () {
 
     // Load the 'student' routing file
     require('../app/routes/application.server.routes')(app);
+    require('../app/routes/doctor.server.routes')(app);
+    require('../app/routes/blog.server.routes')(app);
+    require('../app/routes/registration.server.routes')(app);
     
     // Configure static file serving
     app.use(express.static('./public'));
