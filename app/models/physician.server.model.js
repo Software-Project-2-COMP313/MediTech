@@ -8,6 +8,7 @@ const Schema = mongoose.Schema;
 const PhysicianSchema = new Schema({
     id: Number,
     password:String,
+    designation:String,
     title:String,
     firstName: String,
     lastName: String,

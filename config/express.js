@@ -7,7 +7,6 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const session = require('express-session');
 var flash = require('connect-flash');
-const passport = require('passport');
 
 
 // Define the Express configuration method
@@ -42,8 +41,6 @@ module.exports = function () {
     app.engine('html', require('ejs').renderFile);
 
     app.use(flash());
-    app.use(passport.initialize());
-    app.use(passport.session());
 
     // Load the 'student' routing file
     require('../app/routes/application.server.routes')(app);
