@@ -46,8 +46,7 @@ module.exports = function () {
     require('../app/routes/application.server.routes')(app);
     require('../app/routes/prescreening.server.routes')(app);
     require('../app/routes/user.server.routes')(app);
-
-
+    require('../app/routes/appointment.server.routes')(app);
     require('../app/routes/doctor.server.routes')(app);
     require('../app/routes/blog.server.routes')(app);
     require('../app/routes/registration.server.routes')(app);
