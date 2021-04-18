@@ -19,10 +19,11 @@ exports.createUser = function(req,res,next)
 		  {
 			if (patient == null) 
 			{
-			  var newPatient = new Patient(req.body);
-			  console.log(newPatient);
-			  newPatient.save();
-			  return res.redirect("/index");
+			  var user = new Patient(req.body);
+			  console.log(user);
+			  user.save();
+			  var jsonUser = JSON.parse(JSON.stringify(user));
+			  return res.render("profile", {user:jsonUser});
 			} else 
 			{
 			  res.render("signup", {message:"The userID already exists."});
@@ -47,12 +48,13 @@ exports.createUser = function(req,res,next)
 		  (err, physician) => {
 			if (physician == null) 
 			{
-			  var newPhysician = new Physician(req.body);
-			  console.log(newPhysician);
-			  newPhysician.save();
-			  return res.redirect("/index");
+			  var user = new Physician(req.body);
+			  console.log(user);
+			  user.save();
+			  var jsonUser = JSON.parse(JSON.stringify(user));
+			  return res.render("profile", {user:jsonUser});
 			} else {
-			  res.render("signup", {message:"The userID already exists."});
+			  res.render("signup", {user:user});
 			}
 		  }
 		);

@@ -72,20 +72,20 @@
               </div>
             </div>
             <div class="card-body">
-              <form>
+              <form action="/saveChanges">
                 <h6 class="heading-small text-muted mb-4">User information</h6>
                 <div class="pl-lg-4">
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group focused">
                         <label class="form-control-label" for="FirstName">First Name</label>
-                        <input type="text" id="FirstName" class="form-control form-control-alternative" placeholder="" value="">
+                        <input type="text" id="FirstName" class="form-control form-control-alternative" value="<%= user.firstName %>" readonly>
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group focused">
                         <label class="form-control-label" for="input-last-name">Last name</label>
-                        <input type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="" value="Jesse">
+                        <input type="text" id="input-last-name" class="form-control form-control-alternative" value="<%= user.lastName %>" readonly>
                       </div>
                     </div>
                   </div>
@@ -93,26 +93,25 @@
                     <div class="col-lg-6">
                       <div class="form-group focused">
                         <label class="form-control-label" for="Designation">Designation</label>
-                        <input type="text" id="Designation" class="form-control form-control-alternative" placeholder="" value="">
+                        <input type="text" id="Designation" class="form-control form-control-alternative" value="<%= user.designation %>" readonly>
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-email">Email address</label>
-                        <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="">
+                        <input type="email" id="input-email" class="form-control form-control-alternative" value="<%= user.email %>" readonly>
                       </div>
                     </div>
                   </div>
                 </div>
                 <hr class="my-4">
                 <!-- Address -->
-                <h6 class="heading-small text-muted mb-4">Contact information</h6>
                 <div class="pl-lg-4">
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group focused">
-                        <label class="form-control-label" for="input-address">Address</label>
-                        <input id="input-address" class="form-control form-control-alternative" placeholder="" value="" type="text">
+                        <label class="form-control-label" for="input-dateOfBirth">Date of Birth</label>
+                        <input id="dateOfBirth" class="form-control form-control-alternative" value="<%= user.dateOfBirth %>" type="text" readonly>
                       </div>
                     </div>
                   </div>
@@ -120,42 +119,24 @@
                     <div class="col-lg-4">
                       <div class="form-group focused">
                         <label class="form-control-label" for="Phone">Phone</label>
-                        <input type="text" id="Phone" class="form-control form-control-alternative" placeholder="" value="">
+                        <input type="text" id="Phone" class="form-control form-control-alternative" value="<%= user.phone %>" readonly>
                       </div>
                     </div>
                     <div class="col-lg-4">
                       <div class="form-group focused">
                         <label class="form-control-label" for="Age">Age</label>
-                        <input type="text" id="Age" class="form-control form-control-alternative" placeholder="" value="">
+                        <input type="text" id="Age" class="form-control form-control-alternative" value="<%= user.age %>" readonly>
                       </div>
                     </div>
                     <div class="col-lg-4">
                       <div class="form-group">
                         <label class="form-control-label" for="Gender">Gender</label>
-                        <input type="number" id="Gender" class="form-control form-control-alternative" placeholder="">
+                        <input type="number" id="Gender" class="form-control form-control-alternative" value="<%= user.gender %>" readonly>
                       </div>
                     </div>
                   </div>
                 </div>
                 <hr class="my-4">
-                <!-- Description -->
-                <h6 class="heading-small text-muted mb-4">About me</h6>
-                <div class="pl-lg-4">
-                  <div class="form-group focused">
-                    <label>Sickness</label>
-                    <textarea rows="4" class="form-control form-control-alternative" placeholder=""></textarea>
-                    <label>Allergies</label>
-                    <textarea rows="4" class="form-control form-control-alternative" placeholder=""></textarea>
-                    <label>Special Requests</label>
-                    <textarea rows="4" class="form-control form-control-alternative" placeholder=""></textarea>
-                    <label>Prescriptions</label>
-                    <textarea rows="4" class="form-control form-control-alternative" placeholder=""></textarea>
-                  </div>
-                </div>
-                <div class="buttonactions my-4 d-flex text-center justify-content-center">
-                  <button type="button" class="btn btn-success mr-3">Edit</button>
-                   <button type="button" class="btn btn-success">Save Changes</button>
-               </div>
               </form>
             </div>
           </div>
